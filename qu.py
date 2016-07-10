@@ -6,7 +6,7 @@
 # Author: jianglin
 # Email: xiyang0807@gmail.com
 # Created: 2016-07-09 22:02:42 (CST)
-# Last Update:星期日 2016-7-10 2:6:25 (CST)
+# Last Update:星期日 2016-7-10 11:59:24 (CST)
 #          By:
 # Description:
 # **************************************************************************
@@ -74,10 +74,12 @@ class MouseDisplay(cocos.layer.Layer):
         if self.num == 1:
             # 按下第一次时得到棋子
             self.chess = self.get_chess(x, y)
+            self.chess.scale = 0.2
         else:
             # 按下第二次时移动
             self.num = 0
             self.move_chess(x, y)
+            self.chess.scale = 0.1
 
     def get_chess(self, x, y):
         for spt in self.spt:

@@ -1,3 +1,6 @@
 * maple-game
 
+  [[https://www.python.org][https://img.shields.io/badge/python-3.4-brightgreen.svg]]
+  [[LICENSE][https://img.shields.io/badge/license-BSD-blue.svg]]
+
 ** 区字棋(裤裆棋)
